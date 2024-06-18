@@ -1,0 +1,111 @@
+/* Fonts */
+
+/* kodchasan-500 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kodchasan';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/kodchasan-v17-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* kodchasan-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kodchasan';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/kodchasan-v17-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* kodchasan-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Kodchasan';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/kodchasan-v17-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* Global Styles */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* Css-змінна */
+:root {
+    --color-text-page: #000000;
+    --color-link: #A7A7A7;
+    --color-bg-button: #E58311;
+    --color-text-btn: #FFFFFF;
+    --color-shadow: linear-gradient(76.02deg, #FFCE96 1.66%, #FFF9EB 93.21%);
+
+}
+
+  /* BODY */
+
+  body {
+    max-width: 1600px;
+    color: var(--color-text-page);
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Heder section */
+
+.navHeder {
+    display: flex;
+    gap: 814px;
+    align-items: center;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.menuHeder {
+    display: flex;
+    gap: 40px;
+}
+
+.hederLink {
+    color: var(--color-text-page);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hederLink:hover {
+    font-weight: 700;
+}
+
+/* Big block bee */
+
+.bigBockBee {
+    background-image: url(../images/bgSectionBigBee.png);
+    max-width: 1500px;
+    height: 860px;
+    border-radius: 30px;
+    margin: 30px 50px;
+}
